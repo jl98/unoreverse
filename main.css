@@ -1,0 +1,63 @@
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #df12f1, #ff2f2f);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 2s ease infinite;
+  -moz-animation: AnimationName 2s ease infinite;
+  animation: AnimationName 2s ease infinite;
+}
+
+canvas {
+  height: 480px;
+  width: 480px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.text {
+  text-align: center;
+  color: white;
+  font-family: Archivo Black, 'Helvetica';
+  font-size: 18vw;
+  line-height: 20vw;
+  margin: 0;
+}
+
+#uno {
+  order: 1
+}
+
+#reverse {
+  order: 2
+}
+
