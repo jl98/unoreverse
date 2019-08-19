@@ -167,4 +167,10 @@ let ticker = setInterval(() => {
 // start animation
 
 // send em back
-setTimeout(() => {window.history.back()}, 3000);
+setTimeout(() => {
+  if (window.history.length > 1) {
+    window.history.back()
+  } else {
+    window.close()
+  }
+}, 3000);
